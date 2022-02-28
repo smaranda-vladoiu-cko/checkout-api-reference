@@ -25,7 +25,7 @@ get:
           schema:
             oneOf:
               - $ref: '#/components/schemas/PaymentActionsResponse'
-              - $ref: '#/components/schemas/CardPayouts_PayoutsActionResponse'
+              - $ref: '#/components/schemas/CardPayouts_PayoutActionsResponse'
       headers:
         Cko-Request-Id:
           $ref: '#/components/headers/Cko-Request-Id'

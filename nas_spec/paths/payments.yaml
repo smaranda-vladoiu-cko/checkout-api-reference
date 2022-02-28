@@ -165,6 +165,7 @@ post:
             oneOf:
               - $ref: '#/components/schemas/PaymentAcceptedResponse'
               - $ref: '#/components/schemas/PayoutAcceptedResponse'
+              - $ref: '#/components/schemas/CardPayouts_PayoutRequestAcceptedResponse'
       headers:
         Cko-Request-Id:
           $ref: '#/components/headers/Cko-Request-Id'

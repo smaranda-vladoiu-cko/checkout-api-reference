@@ -5,6 +5,7 @@ properties:
   type:
     type: string
     description: The type of card holder
+    example: 'corporate'
   company_name:
     type: string
     description: The payout destination owner's company name

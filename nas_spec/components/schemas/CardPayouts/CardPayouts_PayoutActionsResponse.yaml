@@ -24,6 +24,8 @@ properties:
     description: The time and date the action was processed
   approved:
     type: bool
+    nullable: true
+    description: Value will be `null` whilst payout is still being processed
   response_code:
     type: string
     maxLength: 5
@@ -32,6 +34,7 @@ properties:
     type: string
   reference:
     type: string
+    maxLength: 50
   processing:
     type: object
     properties:

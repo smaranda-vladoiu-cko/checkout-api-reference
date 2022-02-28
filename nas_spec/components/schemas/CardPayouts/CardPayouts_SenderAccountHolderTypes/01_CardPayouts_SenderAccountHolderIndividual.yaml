@@ -60,12 +60,12 @@ properties:
   reference_type:
     type: string
     enum:
-      - rtn_and_bank_account_number
+      - rtn_and_ban
       - iban
       - card_account
       - email
       - phone_number
-      - bank_account_number_and_bank_identification_code
+      - ban_and_bic
       - wallet_id
       - social_network_id
       - other
@@ -86,10 +86,6 @@ properties:
   country_of_birth:
     type: string
     description: The [two-letter ISO country code](https://docs.checkout.com/resources/codes/country-codes) of the sender's country of birth
-    maxLength: 2
-    minLength: 2
-  nationality:
-    description: The [two-letter ISO country code](https://docs.checkout.com/resources/codes/country-codes) of the sender's nationality
     maxLength: 2
     minLength: 2
   identification:
@@ -117,3 +113,7 @@ properties:
         description: The sender's ID expiry date
         maxLength: 10
         minLength: 10
+  nationality:
+    description: The [two-letter ISO country code](https://docs.checkout.com/resources/codes/country-codes) of the sender's nationality
+    maxLength: 2
+    minLength: 2

@@ -32,6 +32,7 @@ get:
             oneOf:
               - $ref: '#/components/schemas/PaymentDetails'
               - $ref: '#/components/schemas/PayoutDetails'
+              - $ref: '#/components/schemas/CardPayouts_PayoutDetails'
       headers:
         Cko-Request-Id:
           $ref: '#/components/headers/Cko-Request-Id'

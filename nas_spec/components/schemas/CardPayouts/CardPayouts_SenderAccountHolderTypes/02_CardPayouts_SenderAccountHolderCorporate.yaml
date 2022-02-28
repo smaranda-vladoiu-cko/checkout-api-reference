@@ -10,7 +10,7 @@ properties:
   type:
     type: string
     description: The type of sender
-    example: 'individual'
+    example: 'corporate'
   company_name:
     type: string
     description: The sender's company name
@@ -104,7 +104,7 @@ properties:
         description: The sender's ID expiry date
         maxLength: 10
         minLength: 10
-      nationality:
-        description: The [two-letter ISO country code](https://docs.checkout.com/resources/codes/country-codes) of the sender's nationality
-        maxLength: 2
-        minLength: 2
+  nationality:
+    description: The [two-letter ISO country code](https://docs.checkout.com/resources/codes/country-codes) of the sender's nationality
+    maxLength: 2
+    minLength: 2

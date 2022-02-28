@@ -9,6 +9,9 @@ properties:
     description: The payout destination type
   id:
     type: string
+    pattern: ^(src)_(\w{26})$
+    maxLength: 30
+    minLength: 30
     description: The payment source identifier (eg a card source identifier)
   account_holder:
     type: object

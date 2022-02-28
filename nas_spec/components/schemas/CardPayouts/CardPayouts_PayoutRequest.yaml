@@ -6,6 +6,7 @@ properties:
     required:
       - type
       - id
+      - currency
     properties:
       type:
         type: string
@@ -45,7 +46,6 @@ properties:
     type: object
     required:
       - funds_transfer_type
-      - processing_channel_id
     properties:
       skip_expiry:
         type: boolean
@@ -108,5 +108,8 @@ properties:
       quote_id:
         type: string
         description: The quote ID of the transaction if obtained before making payout
-      processing_channel_id:
-        type: string
+  processing_channel_id:
+    type: string
+    pattern: '^(pc)_(\w{26})$'
+    maxLength: 29
+    minLength: 29

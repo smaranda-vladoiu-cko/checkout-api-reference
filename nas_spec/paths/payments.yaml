@@ -98,20 +98,66 @@ post:
               source:
                 type: 'currency_account'
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
+                amount: 1000
               destination:
-                type: 'id'
-                id: 'src_gsd2agaqd2sernz5tpcfv555nq'
+                type: 'card'
+                number: '4242424242424242'
+                expiry_month: 12
+                expiry_year: 2024
+                account_holder:
+                  type: 'individual'
+                  first_name: 'Clark'
+                  middle_name: 'Joseph'
+                  last_name: 'Kend'
+                  date_of_birth: '1938-04-18'
+                  country_of_birth: 'US'
+                  billing_address:
+                    address_line1: 'Apt. 3D'
+                    address_line2: '344 Clinton St'
+                    city: 'Metropolis'
+                    zip: '33866'
+                    country: 'GB'
+                  phone:
+                    country_code: '44'
+                    number: '7777 123456'
+                  identification:
+                    type: 'driving_license'
+                    number: 'D55422213'
+                    issuing_country: 'GB'
+                    date_of_expiry: '2028-11-20'
+                  email: 'clark.kent@dailyplanet.net'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
               billing_descriptor:
-                reference: 'Withdrawal'
+                reference: 'BILLING-REFERENCE'
               sender:
-                type: 'instrument'
-                reference: '8285282045818'
+                type: 'individual'
+                first_name: 'Bruce'
+                middle_name: 'Thomas'
+                last_name: 'Wayne'
+                address:
+                  address_line1: 'Wayne Manor'
+                  address_line2: '1007 Mountain Drive'
+                  city: 'Gotham'
+                  zip: '77701'
+                  country: 'GB'
+                reference: 'bruce@waynecorp.com'
+                reference_type: 'email'             
+                date_of_birth: '1939-05-27'
+                source_of_funds: 'credit'
+                country_of_birth: 'US'
+                identification:
+                  type: 'passport'
+                  number: '55511199'
+                  issuing_country: 'US'
+                  date_of_expiry: '2031-01-13'
+                nationality: 'US'
               instruction:
-                purpose: 'Withdrawal'
-                scheme: 'local'
+                skip_expiry: false
+                purpose: 'pension'
+                funds_transfer_type: 'AA'
+                mvv: '0123456789'
                 quote_id: 'qte_mbabizu24mvu3mela5njyhpit4'
               processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
           Card Payout - Direct Funds Disbursement:
@@ -119,20 +165,40 @@ post:
               source:
                 type: 'currency_account'
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
+                amount: 1000
               destination:
-                type: 'id'
-                id: 'src_gsd2agaqd2sernz5tpcfv555nq'
+                type: 'card'
+                number: '4242424242424242'
+                expiry_month: 12
+                expiry_year: 2024
+                account_holder:
+                  type: 'corporate'
+                  company_name: 'Daily Planet'
+                  billing_address:
+                    address_line1: 'Apt. 3D'
+                    address_line2: '344 Clinton St'
+                    city: 'Metropolis'
+                    zip: '33866'
+                    country: 'GB'
+                  phone:
+                    country_code: '44'
+                    number: '7777 123456'
+                  identification:
+                    type: 'driving_license'
+                    number: 'D55422213'
+                    issuing_country: 'GB'
+                    date_of_expiry: '2028-11-20'
+                  email: 'clark.kent@dailyplanet.net'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
               billing_descriptor:
-                reference: 'Withdrawal'
-              sender:
-                type: 'instrument'
-                reference: '8285282045818'
+                reference: 'BILLING-REFERENCE'
               instruction:
-                purpose: 'Withdrawal'
-                scheme: 'local'
+                skip_expiry: false
+                purpose: 'pension'
+                funds_transfer_type: 'OG'
+                mvv: '0123456789'
                 quote_id: 'qte_mbabizu24mvu3mela5njyhpit4'
               processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
           Card Payout - 3rd Party Funds Disbursement:
@@ -140,23 +206,60 @@ post:
               source:
                 type: 'currency_account'
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
+                amount: 1000
               destination:
-                type: 'id'
-                id: 'src_gsd2agaqd2sernz5tpcfv555nq'
+                type: 'card'
+                number: '4242424242424242'
+                expiry_month: 12
+                expiry_year: 2024
+                account_holder:
+                  type: 'corporate'
+                  company_name: 'Daily Planet'
+                  billing_address:
+                    address_line1: 'Apt. 3D'
+                    address_line2: '344 Clinton St'
+                    city: 'Metropolis'
+                    zip: '33866'
+                    country: 'GB'
+                  phone:
+                    country_code: '44'
+                    number: '7777 123456'
+                  identification:
+                    type: 'driving_license'
+                    number: 'D55422213'
+                    issuing_country: 'GB'
+                    date_of_expiry: '2028-11-20'
+                  email: 'clark.kent@dailyplanet.net'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
               billing_descriptor:
-                reference: 'Withdrawal'
+                reference: 'BILLING-REFERENCE'
               sender:
-                type: 'instrument'
-                reference: '8285282045818'
+                type: 'corporate'
+                company_name: 'Wayne Enterprises'
+                address:
+                  address_line1: 'Wayne Tower'
+                  address_line2: '150-180 8th Avenue'
+                  city: 'Gotham'
+                  zip: '72101'
+                  country: 'GB'
+                reference: '188344421933455'
+                reference_type: 'ban_and_bic'             
+                source_of_funds: 'credit'
+                country_of_birth: 'US'
+                identification:
+                  type: 'tax_id'
+                  number: '888445761'
+                  issuing_country: 'US'
               instruction:
-                purpose: 'Withdrawal'
-                scheme: 'local'
+                skip_expiry: false
+                purpose: 'pension'
+                funds_transfer_type: 'FD'
+                mvv: '0123456789'
                 quote_id: 'qte_mbabizu24mvu3mela5njyhpit4'
               processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
-
+          
   responses:
     '201':
       description: Payment processed successfully

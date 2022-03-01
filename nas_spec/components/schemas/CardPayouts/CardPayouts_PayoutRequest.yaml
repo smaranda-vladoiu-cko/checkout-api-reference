@@ -1,12 +1,16 @@
 type: object
 description: The source of the payout
+required: 
+  - source
+  - destination
+  - currency
+  - instruction
 properties:
   source:
     type: object
     required:
       - type
       - id
-      - currency
     properties:
       type:
         type: string
@@ -26,8 +30,6 @@ properties:
   amount:
     type: integer
     description: The payout destination amount. The exact format [depends on the currency](https://docs.checkout.com/resources/calculating-the-value). One of `source.amount` or `amount` must be provided
-  sender:
-    $ref: '#/components/schemas/CardPayouts_PayoutRequestSender'
   currency:
     type: string
     description: The [three-letter currency code](https://docs.checkout.com/resources/codes/currency-codes)
@@ -42,6 +44,8 @@ properties:
       reference:
         type: string
         description: The reference that should be shown on the statement
+  sender:
+    $ref: '#/components/schemas/CardPayouts_PayoutRequestSender'
   instruction:
     type: object
     required:
@@ -109,7 +113,7 @@ properties:
         type: string
         description: The quote ID of the transaction if obtained before making payout
   processing_channel_id:
-    type: string
-    pattern: '^(pc)_(\w{26})$'
-    maxLength: 29
-    minLength: 29
+        type: string
+        pattern: '^(pc)_(\w{26})$'
+        maxLength: 29
+        minLength: 29

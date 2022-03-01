@@ -167,28 +167,11 @@ post:
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
                 amount: 1000
               destination:
-                type: 'card'
-                number: '4242424242424242'
-                expiry_month: 12
-                expiry_year: 2024
+                type: 'token'
+                token: 'tok_y3oqhf46pyzuxjbcn2giaqnb44'
                 account_holder:
                   type: 'corporate'
                   company_name: 'Daily Planet'
-                  billing_address:
-                    address_line1: 'Apt. 3D'
-                    address_line2: '344 Clinton St'
-                    city: 'Metropolis'
-                    zip: '33866'
-                    country: 'GB'
-                  phone:
-                    country_code: '44'
-                    number: '7777 123456'
-                  identification:
-                    type: 'driving_license'
-                    number: 'D55422213'
-                    issuing_country: 'GB'
-                    date_of_expiry: '2028-11-20'
-                  email: 'clark.kent@dailyplanet.net'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
@@ -208,28 +191,11 @@ post:
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
                 amount: 1000
               destination:
-                type: 'card'
-                number: '4242424242424242'
-                expiry_month: 12
-                expiry_year: 2024
+                type: 'id'
+                id: 'src_y3oqhf46pyzuxjbcn2giaqnb44'
                 account_holder:
                   type: 'corporate'
                   company_name: 'Daily Planet'
-                  billing_address:
-                    address_line1: 'Apt. 3D'
-                    address_line2: '344 Clinton St'
-                    city: 'Metropolis'
-                    zip: '33866'
-                    country: 'GB'
-                  phone:
-                    country_code: '44'
-                    number: '7777 123456'
-                  identification:
-                    type: 'driving_license'
-                    number: 'D55422213'
-                    issuing_country: 'GB'
-                    date_of_expiry: '2028-11-20'
-                  email: 'clark.kent@dailyplanet.net'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'

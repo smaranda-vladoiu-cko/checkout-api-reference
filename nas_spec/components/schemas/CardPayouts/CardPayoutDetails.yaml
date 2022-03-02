@@ -57,6 +57,7 @@ properties:
         description: The [three-letter currency code](https://checkout.com/docs/four/resources/codes/currency-codes) associated with the currency account
   destination:
     type: object
+    description: The destination of the payout
     required:
       - type
       - expiry_year

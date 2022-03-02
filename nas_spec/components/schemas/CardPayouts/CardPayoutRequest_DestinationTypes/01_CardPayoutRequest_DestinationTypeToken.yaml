@@ -1,4 +1,5 @@
 type: object
+description: The destination of the payout
 required:
   - type
   - token

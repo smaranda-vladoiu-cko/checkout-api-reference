@@ -44,6 +44,7 @@ properties:
     maxLength: 50
   processing:
     type: object
+    description: Returns information related to the processing of the payment
     properties:
       retrieval_reference_number:
         type: string

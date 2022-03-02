@@ -26,7 +26,7 @@ properties:
         type: integer
         description: Amount to be paid out from currency account. One of `source.amount` or `amount` must be provided
   destination:
-    $ref: '#/components/schemas/CardPayouts_PayoutRequestDestination'
+    $ref: '#/components/schemas/CardPayoutRequestDestination'
   amount:
     type: integer
     description: The payout destination amount. The exact format [depends on the currency](https://docs.checkout.com/resources/calculating-the-value). One of `source.amount` or `amount` must be provided
@@ -45,7 +45,7 @@ properties:
         type: string
         description: The reference that should be shown on the statement
   sender:
-    $ref: '#/components/schemas/CardPayouts_PayoutRequestSender'
+    $ref: '#/components/schemas/CardPayoutRequestSender'
   instruction:
     type: object
     required:

@@ -106,16 +106,16 @@ post:
                 expiry_year: 2024
                 account_holder:
                   type: 'individual'
-                  first_name: 'Clark'
+                  first_name: 'John'
                   middle_name: 'Joseph'
-                  last_name: 'Kend'
+                  last_name: 'Smith'
                   date_of_birth: '1938-04-18'
                   country_of_birth: 'US'
                   billing_address:
                     address_line1: 'Apt. 3D'
-                    address_line2: '344 Clinton St'
-                    city: 'Metropolis'
-                    zip: '33866'
+                    address_line2: '90 Tottenham Court Road'
+                    city: 'London'
+                    zip: 'W1T 4TJ'
                     country: 'GB'
                   phone:
                     country_code: '44'
@@ -125,7 +125,7 @@ post:
                     number: 'D55422213'
                     issuing_country: 'GB'
                     date_of_expiry: '2028-11-20'
-                  email: 'clark.kent@dailyplanet.net'
+                  email: 'email@docs.checkout.com'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
@@ -133,17 +133,17 @@ post:
                 reference: 'BILLING-REFERENCE'
               sender:
                 type: 'individual'
-                first_name: 'Bruce'
-                middle_name: 'Thomas'
-                last_name: 'Wayne'
+                first_name: 'Stephan'
+                middle_name: 'Vincent'
+                last_name: 'Strange'
                 address:
-                  address_line1: 'Wayne Manor'
-                  address_line2: '1007 Mountain Drive'
-                  city: 'Gotham'
-                  zip: '77701'
+                  address_line1: 'A House'
+                  address_line2: 'A Street'
+                  city: 'A City'
+                  zip: 'AA12 1AA'
                   country: 'GB'
-                reference: 'bruce@waynecorp.com'
-                reference_type: 'email'             
+                reference: '1234567ABCDEFG'
+                reference_type: 'other'             
                 date_of_birth: '1939-05-27'
                 source_of_funds: 'credit'
                 country_of_birth: 'US'
@@ -167,11 +167,27 @@ post:
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
                 amount: 1000
               destination:
-                type: 'token'
-                token: 'tok_y3oqhf46pyzuxjbcn2giaqnb44'
+                type: 'card'
+                number: '4242424242424242'
+                expiry_month: 12
+                expiry_year: 2024
                 account_holder:
                   type: 'corporate'
-                  company_name: 'Daily Planet'
+                  company_name: 'Checkout.com'
+                  billing_address:
+                    address_line1: 'Apt. 3D'
+                    address_line2: '90 Tottenham Court Road'
+                    city: 'London'
+                    zip: 'W1T 4TJ'
+                    country: 'GB'
+                  phone:
+                    country_code: '44'
+                    number: '7777 123456'
+                  identification:
+                    type: 'tax_id'
+                    number: '888445761'
+                    issuing_country: 'GB'
+                  email: 'email@docs.checkout.com'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
@@ -191,11 +207,27 @@ post:
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
                 amount: 1000
               destination:
-                type: 'id'
-                id: 'src_y3oqhf46pyzuxjbcn2giaqnb44'
+                type: 'card'
+                number: '4242424242424242'
+                expiry_month: 12
+                expiry_year: 2024
                 account_holder:
                   type: 'corporate'
-                  company_name: 'Daily Planet'
+                  company_name: 'Checkout.com'
+                  billing_address:
+                    address_line1: 'Apt. 3D'
+                    address_line2: '90 Tottenham Court Road'
+                    city: 'London'
+                    zip: 'W1T 4TJ'
+                    country: 'GB'
+                  phone:
+                    country_code: '44'
+                    number: '7777 123456'
+                  identification:
+                    type: 'tax_id'
+                    number: '888445761'
+                    issuing_country: 'GB'
+                  email: 'email@docs.checkout.com'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
@@ -203,15 +235,15 @@ post:
                 reference: 'BILLING-REFERENCE'
               sender:
                 type: 'corporate'
-                company_name: 'Wayne Enterprises'
+                company_name: 'A Company'
                 address:
-                  address_line1: 'Wayne Tower'
-                  address_line2: '150-180 8th Avenue'
-                  city: 'Gotham'
-                  zip: '72101'
+                  address_line1: 'A House'
+                  address_line2: 'A Street'
+                  city: 'A City'
+                  zip: 'AA12 1AA'
                   country: 'GB'
-                reference: '188344421933455'
-                reference_type: 'ban_and_bic'             
+                reference: '1234567ABCDEFG'
+                reference_type: 'other'           
                 source_of_funds: 'credit'
                 country_of_birth: 'US'
                 identification:
@@ -232,32 +264,12 @@ post:
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
                 amount: 1000
               destination:
-                type: 'card'
-                number: '4242424242424242'
-                expiry_month: 12
-                expiry_year: 2024
+                type: 'id'
+                id: 'src_udst2tfldj6upmye2reztkmm4i'
                 account_holder:
                   type: 'individual'
-                  first_name: 'Clark'
-                  middle_name: 'Joseph'
-                  last_name: 'Kend'
-                  date_of_birth: '1938-04-18'
-                  country_of_birth: 'US'
-                  billing_address:
-                    address_line1: 'Apt. 3D'
-                    address_line2: '344 Clinton St'
-                    city: 'Metropolis'
-                    zip: '33866'
-                    country: 'GB'
-                  phone:
-                    country_code: '44'
-                    number: '7777 123456'
-                  identification:
-                    type: 'driving_license'
-                    number: 'D55422213'
-                    issuing_country: 'GB'
-                    date_of_expiry: '2028-11-20'
-                  email: 'clark.kent@dailyplanet.net'
+                  first_name: 'John'
+                  last_name: 'Smith'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
@@ -265,17 +277,17 @@ post:
                 reference: 'BILLING-REFERENCE'
               sender:
                 type: 'individual'
-                first_name: 'Bruce'
-                middle_name: 'Thomas'
-                last_name: 'Wayne'
+                first_name: 'Stephan'
+                middle_name: 'Vincent'
+                last_name: 'Strange'
                 address:
-                  address_line1: 'Wayne Manor'
-                  address_line2: '1007 Mountain Drive'
-                  city: 'Gotham'
-                  zip: '77701'
+                  address_line1: 'A House'
+                  address_line2: 'A Street'
+                  city: 'A City'
+                  zip: 'AA12 1AA'
                   country: 'GB'
-                reference: 'bruce@waynecorp.com'
-                reference_type: 'email'             
+                reference: '1234567ABCDEFG'
+                reference_type: 'other'           
                 date_of_birth: '1939-05-27'
                 source_of_funds: 'credit'
                 country_of_birth: 'US'
@@ -299,11 +311,11 @@ post:
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
                 amount: 1000
               destination:
-                type: 'token'
-                token: 'tok_y3oqhf46pyzuxjbcn2giaqnb44'
+                type: 'id'
+                token: 'src_y3oqhf46pyzuxjbcn2giaqnb44'
                 account_holder:
                   type: 'corporate'
-                  company_name: 'Daily Planet'
+                  company_name: 'Checkout.com'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
@@ -327,7 +339,7 @@ post:
                 id: 'src_y3oqhf46pyzuxjbcn2giaqnb44'
                 account_holder:
                   type: 'corporate'
-                  company_name: 'Daily Planet'
+                  company_name: 'Checkout.com'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
@@ -335,15 +347,15 @@ post:
                 reference: 'BILLING-REFERENCE'
               sender:
                 type: 'corporate'
-                company_name: 'Wayne Enterprises'
+                company_name: 'A Company'
                 address:
-                  address_line1: 'Wayne Tower'
-                  address_line2: '150-180 8th Avenue'
-                  city: 'Gotham'
-                  zip: '72101'
+                  address_line1: 'A House'
+                  address_line2: 'A Street'
+                  city: 'A City'
+                  zip: 'AA12 1AA'
                   country: 'GB'
-                reference: '188344421933455'
-                reference_type: 'ban_and_bic'             
+                reference: '1234567ABCDEFG'
+                reference_type: 'other'             
                 source_of_funds: 'credit'
                 country_of_birth: 'US'
                 identification:
@@ -364,32 +376,12 @@ post:
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
                 amount: 1000
               destination:
-                type: 'card'
-                number: '4242424242424242'
-                expiry_month: 12
-                expiry_year: 2024
+                type: 'token'
+                token: 'tok_y3oqhf46pyzuxjbcn2giaqnb44'
                 account_holder:
                   type: 'individual'
-                  first_name: 'Clark'
-                  middle_name: 'Joseph'
-                  last_name: 'Kend'
-                  date_of_birth: '1938-04-18'
-                  country_of_birth: 'US'
-                  billing_address:
-                    address_line1: 'Apt. 3D'
-                    address_line2: '344 Clinton St'
-                    city: 'Metropolis'
-                    zip: '33866'
-                    country: 'GB'
-                  phone:
-                    country_code: '44'
-                    number: '7777 123456'
-                  identification:
-                    type: 'driving_license'
-                    number: 'D55422213'
-                    issuing_country: 'GB'
-                    date_of_expiry: '2028-11-20'
-                  email: 'clark.kent@dailyplanet.net'
+                  first_name: 'John'
+                  last_name: 'Smith'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
@@ -397,17 +389,17 @@ post:
                 reference: 'BILLING-REFERENCE'
               sender:
                 type: 'individual'
-                first_name: 'Bruce'
-                middle_name: 'Thomas'
-                last_name: 'Wayne'
+                first_name: 'Stephan'
+                middle_name: 'Vincent'
+                last_name: 'Strange'
                 address:
-                  address_line1: 'Wayne Manor'
-                  address_line2: '1007 Mountain Drive'
-                  city: 'Gotham'
-                  zip: '77701'
+                  address_line1: 'A House'
+                  address_line2: 'A Street'
+                  city: 'A City'
+                  zip: 'AA12 1AA'
                   country: 'GB'
-                reference: 'bruce@waynecorp.com'
-                reference_type: 'email'             
+                reference: '1234567ABCDEFG'
+                reference_type: 'other'           
                 date_of_birth: '1939-05-27'
                 source_of_funds: 'credit'
                 country_of_birth: 'US'
@@ -435,7 +427,7 @@ post:
                 token: 'tok_y3oqhf46pyzuxjbcn2giaqnb44'
                 account_holder:
                   type: 'corporate'
-                  company_name: 'Daily Planet'
+                  company_name: 'Checkout.com'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
@@ -455,11 +447,11 @@ post:
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
                 amount: 1000
               destination:
-                type: 'id'
-                id: 'src_y3oqhf46pyzuxjbcn2giaqnb44'
+                type: 'token'
+                id: 'tok_y3oqhf46pyzuxjbcn2giaqnb44'
                 account_holder:
                   type: 'corporate'
-                  company_name: 'Daily Planet'
+                  company_name: 'Checkout.com'
               amount: 1000
               currency: GBP
               reference: 'PO-215-5721'
@@ -467,15 +459,15 @@ post:
                 reference: 'BILLING-REFERENCE'
               sender:
                 type: 'corporate'
-                company_name: 'Wayne Enterprises'
+                company_name: 'A Company'
                 address:
-                  address_line1: 'Wayne Tower'
-                  address_line2: '150-180 8th Avenue'
-                  city: 'Gotham'
-                  zip: '72101'
+                  address_line1: 'A House'
+                  address_line2: 'A Street'
+                  city: 'A City'
+                  zip: 'AA12 1AA'
                   country: 'GB'
-                reference: '188344421933455'
-                reference_type: 'ban_and_bic'             
+                reference: '1234567ABCDEFG'
+                reference_type: 'other'             
                 source_of_funds: 'credit'
                 country_of_birth: 'US'
                 identification:

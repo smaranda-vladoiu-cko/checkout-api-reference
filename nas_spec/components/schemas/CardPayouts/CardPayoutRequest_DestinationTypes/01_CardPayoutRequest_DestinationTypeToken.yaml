@@ -1,8 +1,8 @@
 type: object
-description: A token payment source
 required:
   - type
   - token
+  - account_holder
 properties:
   type:
     type: string

@@ -8,14 +8,16 @@ required:
 properties:
   source:
     type: object
+    description: The source of the payout
     required:
       - type
       - id
     properties:
       type:
         type: string
+        description: The source to fund the payout
         enum:
-          - currency_account
+          - currency_account  
       id:
         type: string
         description: The currency account ID to fund the payout
@@ -24,15 +26,15 @@ properties:
         minLength: 29
       amount:
         type: integer
-        description: Amount to be paid out from currency account. One of `source.amount` or `amount` must be provided
+        description: Amount to be paid out from currency account. The exact format [depends on the currency](https://checkout.com/docs/four/resources/calculating-the-amount). One of `source.amount` or `amount` must be provided
   destination:
     $ref: '#/components/schemas/CardPayoutRequestDestination'
   amount:
     type: integer
-    description: The payout destination amount. The exact format [depends on the currency](https://docs.checkout.com/resources/calculating-the-value). One of `source.amount` or `amount` must be provided
+    description: The payout destination amount. The exact format [depends on the currency](https://checkout.com/docs/four/resources/calculating-the-amount). One of `source.amount` or `amount` must be provided
   currency:
     type: string
-    description: The [three-letter currency code](https://docs.checkout.com/resources/codes/currency-codes)
+    description: The [three-letter currency code](https://checkout.com/docs/four/resources/codes/currency-codes)
   reference:
     type: string
     description: A reference you can later use to identify this payout, such as an order number
@@ -114,7 +116,8 @@ properties:
         type: string
         description: The quote ID of the transaction if obtained before making payout
   processing_channel_id:
-        type: string
-        pattern: '^(pc)_(\w{26})$'
-        maxLength: 29
-        minLength: 29
+    type: string
+    description: The processing channel identifier
+    pattern: '^(pc)_(\w{26})$'
+    maxLength: 29
+    minLength: 29

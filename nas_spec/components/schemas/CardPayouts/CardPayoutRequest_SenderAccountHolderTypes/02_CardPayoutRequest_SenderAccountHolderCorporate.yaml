@@ -1,5 +1,4 @@
 type: object
-description: A token payment source
 required:
   - company_name
   - address
@@ -47,7 +46,7 @@ properties:
         maxLength: 10
       country:
         type: string
-        description: The [two-letter ISO country code](https://docs.checkout.com/resources/codes/country-codes) of the sender address
+        description: The [two-letter ISO country code](https://checkout.com/docs/four/resources/codes/country-codes) of the sender address
         maxLength: 2
         minLength: 2
   reference:
@@ -102,7 +101,7 @@ properties:
         description: The sender's ID number. Mandatory when sending cross-border transactions from AU
       issuing_country:
         type: string
-        description: The [two-letter ISO country code](https://docs.checkout.com/resources/codes/country-codes) of the sender's country of issue. Mandatory when sending cross-border transactions from AU
+        description: The [two-letter ISO country code](https://checkout.com/docs/four/resources/codes/country-codes) of the sender's country of issue. Mandatory when sending cross-border transactions from AU
         minLength: 2
         maxLength: 2
       date_of_expiry:
@@ -111,6 +110,6 @@ properties:
         maxLength: 10
         minLength: 10
   nationality:
-    description: The [two-letter ISO country code](https://docs.checkout.com/resources/codes/country-codes) of the sender's nationality
+    description: The [two-letter ISO country code](https://checkout.com/docs/four/resources/codes/country-codes) of the sender's nationality
     maxLength: 2
     minLength: 2

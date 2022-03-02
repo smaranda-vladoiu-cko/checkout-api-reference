@@ -1,10 +1,10 @@
 type: object
-description: A token payment source
 required:
   - type
   - number
   - expiry_month
   - expiry_year
+  - account_holder
 properties:
   type:
     type: string

@@ -12,6 +12,12 @@ properties:
     description: The sender's company name
   address:
     type: object
+    required:
+      - address_line1
+      - address_line2
+      - city
+      - zip
+      - country
     properties:
       address_line1:
         type: string
@@ -41,7 +47,7 @@ properties:
         minLength: 2
   reference:
     type: string
-    description: The reference of the sender. Only alphanumeric characters are allowed. Mandatory for Money Transfer and PayFac use cases
+    description: The reference of the sender. Only alphanumeric characters are allowed. Mandatory for Money Transfer and Third-Party use cases
     maxLength: 16
   reference_type:
     type: string

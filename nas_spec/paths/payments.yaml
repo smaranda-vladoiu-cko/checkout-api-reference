@@ -19,7 +19,7 @@ post:
           oneOf:
             - $ref: '#/components/schemas/PaymentRequest'
             - $ref: '#/components/schemas/PayoutRequest'
-            - $ref: '#/components/schemas/CardPayouts_PayoutRequest'
+            - $ref: '#/components/schemas/CardPayoutRequest'
         examples:
           Payment:
             value:
@@ -298,7 +298,7 @@ post:
             oneOf:
               - $ref: '#/components/schemas/PaymentAcceptedResponse'
               - $ref: '#/components/schemas/PayoutAcceptedResponse'
-              - $ref: '#/components/schemas/CardPayouts_PayoutRequestAcceptedResponse'
+              - $ref: '#/components/schemas/CardPayoutRequestAcceptedResponse'
       headers:
         Cko-Request-Id:
           $ref: '#/components/headers/Cko-Request-Id'

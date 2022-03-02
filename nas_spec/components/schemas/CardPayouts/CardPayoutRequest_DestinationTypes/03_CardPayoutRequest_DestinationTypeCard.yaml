@@ -28,9 +28,9 @@ properties:
     discriminator:
       propertyName: type
       mapping:
-        individual: '#/components/schemas/01_CardPayouts_DestinationTypeCardAccountHolderIndividual'
-        corporate: '#/components/schemas/02_CardPayouts_DestinationTypeCardAccountHolderCorporate'
-        government: '#/components/schemas/03_CardPayouts_DestinationTypeCardAccountHolderGovernment'
+        individual: '#/components/schemas/01_CardPayoutRequest_DestinationTypeCardAccountHolderIndividual'
+        corporate: '#/components/schemas/02_CardPayoutRequest_DestinationTypeCardAccountHolderCorporate'
+        government: '#/components/schemas/03_CardPayoutRequest_DestinationTypeCardAccountHolderGovernment'
     properties:
       type:
         type: string

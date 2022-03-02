@@ -50,6 +50,7 @@ properties:
     type: object
     required:
       - funds_transfer_type
+    description: Details about the instruction for a payout
     properties:
       skip_expiry:
         type: boolean

@@ -41,19 +41,19 @@ properties:
         minLength: 2
   reference:
     type: string
-    description: The reference of the sender. Mandatory for Money Transfer and PayFac use cases
-    maxLength: 30
+    description: The reference of the sender. Only alphanumeric characters are allowed. Mandatory for Money Transfer and PayFac use cases
+    maxLength: 16
   reference_type:
     type: string
     enum:
-      - rtn_and_ban
-      - iban
-      - card_account
-      - email
-      - phone_number
-      - ban_and_bic
-      - wallet_id
-      - social_network_id
+      # - rtn_and_ban
+      # - iban
+      # - card_account
+      # - email
+      # - phone_number
+      # - ban_and_bic
+      # - wallet_id
+      # - social_network_id
       - other
   date_of_birth:
     type: string

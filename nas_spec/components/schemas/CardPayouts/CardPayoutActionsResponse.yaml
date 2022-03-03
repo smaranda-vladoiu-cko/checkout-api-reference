@@ -68,5 +68,5 @@ properties:
   metadata:
     type: object
     description: A set of key-value pairs that you can attach to an action
-    example: { 'shipping_ref': 'MQIBN2' }
+    example: { 'payout_ref': 'MQIBN2' }
 

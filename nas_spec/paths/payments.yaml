@@ -133,9 +133,9 @@ post:
                 reference: 'BILLING-REFERENCE'
               sender:
                 type: 'individual'
-                first_name: 'Stephan'
-                middle_name: 'Vincent'
-                last_name: 'Strange'
+                first_name: 'Hayley'
+                middle_name: 'Vanessa'
+                last_name: 'Jones'
                 address:
                   address_line1: 'A House'
                   address_line2: 'A Street'
@@ -277,9 +277,9 @@ post:
                 reference: 'BILLING-REFERENCE'
               sender:
                 type: 'individual'
-                first_name: 'Stephan'
-                middle_name: 'Vincent'
-                last_name: 'Strange'
+                first_name: 'Hayley'
+                middle_name: 'Vanessa'
+                last_name: 'Jones'
                 address:
                   address_line1: 'A House'
                   address_line2: 'A Street'
@@ -389,9 +389,9 @@ post:
                 reference: 'BILLING-REFERENCE'
               sender:
                 type: 'individual'
-                first_name: 'Stephan'
-                middle_name: 'Vincent'
-                last_name: 'Strange'
+                first_name: 'Hayley'
+                middle_name: 'Vanessa'
+                last_name: 'Jones'
                 address:
                   address_line1: 'A House'
                   address_line2: 'A Street'

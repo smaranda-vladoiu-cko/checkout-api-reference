@@ -20,8 +20,23 @@ properties:
     example: Accepted
   reference:
     type: string
-    description: An internal reference you can later use to identify this payout
+    description: Your reference for the payout request
     maxLength: 50
+  destination:
+    type: object
+    description: The destination of the payout
+    properties:
+      account_holder:
+        type: object
+        description: The account holder details
+        properties:
+          id:
+            type: string
+            description: The payment destination identifier (e.g., a card source identifier)
+            pattern: '^(src)_(\w{26})$'
+            minLength: 30
+            maxLength: 30
+            example: src_nwd3m4in3hkuddfpjsaevunhdy
   links:
     type: object
     description: The links related to the payout.
@@ -30,6 +45,7 @@ properties:
     properties:
       self:
         type: object
+        description: 	The URI of the payout
         properties:
           href:
             type: string

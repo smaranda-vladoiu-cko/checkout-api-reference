@@ -22,6 +22,7 @@ properties:
     type: string
     description: Your reference for the payout request
     maxLength: 50
+    example: example payout
   destination:
     type: object
     description: The destination of the payout
@@ -50,3 +51,4 @@ properties:
           href:
             type: string
             description: The link URL
+            example: https://api.sandbox.checkout.com/payments/pay_8n2n4o4dsasergngxiq3cx4xtu

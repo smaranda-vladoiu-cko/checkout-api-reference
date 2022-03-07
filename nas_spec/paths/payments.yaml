@@ -93,12 +93,11 @@ post:
                 scheme: 'local'
                 quote_id: 'qte_mbabizu24mvu3mela5njyhpit4'
               processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
-          Card Payout -  Money Transfer:
+          Card Payout - Money Transfer:
             value:
               source:
                 type: 'currency_account'
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
-                amount: 1000
               destination:
                 type: 'card'
                 number: '4242424242424242'
@@ -160,12 +159,11 @@ post:
                 mvv: '0123456789'
                 quote_id: 'qte_mbabizu24mvu3mela5njyhpit4'
               processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
-          Card Payout -  Direct Funds Disbursement:
+          Card Payout - Direct Funds Disbursement:
             value:
               source:
                 type: 'currency_account'
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
-                amount: 1000
               destination:
                 type: 'id'
                 token: 'src_y3oqhf46pyzuxjbcn2giaqnb44'
@@ -184,12 +182,11 @@ post:
                 mvv: '0123456789'
                 quote_id: 'qte_mbabizu24mvu3mela5njyhpit4'
               processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
-          Card Payout -  3rd Party Funds Disbursement:
+          Card Payout - Third-Party Funds Disbursement:
             value:
               source:
                 type: 'currency_account'
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
-                amount: 1000
               destination:
                 type: 'token'
                 id: 'tok_y3oqhf46pyzuxjbcn2giaqnb44'

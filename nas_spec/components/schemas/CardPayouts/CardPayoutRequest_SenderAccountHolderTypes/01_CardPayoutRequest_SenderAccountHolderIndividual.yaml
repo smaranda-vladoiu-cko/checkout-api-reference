@@ -5,6 +5,7 @@ required:
   - address
   - reference
   - reference_type
+  - date_of_birth
   - source_of_funds
 properties:
   type:

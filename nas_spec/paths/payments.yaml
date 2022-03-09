@@ -210,7 +210,6 @@ post:
                 reference: '1234567ABCDEFG'
                 reference_type: 'other'             
                 source_of_funds: 'credit'
-                country_of_birth: 'US'
                 identification:
                   type: 'tax_id'
                   number: '888445761'

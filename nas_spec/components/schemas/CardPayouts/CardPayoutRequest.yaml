@@ -84,30 +84,30 @@ properties:
         description: The funds transfer type
         enum:
           - AA
-          - BI
+          #- BI
           - PP
-          - WT
-          - BB
-          - BP
-          - CP
+          #- WT
+          #- BB
+          #- BP
+          #- CP
           - FD
           - FT
-          - GD
-          - GP
+          #- GD
+          #- GP
           - LO
-          - MD
+          #- MD
           - OG
-          - PD
-          - TU
+          #- PD
+          #- TU
           - C04
           - C07
           - C52
-          - C53
-          - C54
+          #- C53
+          #- C54
           - C55
-          - C56
-          - C57
-          - C65
+          #- C56
+          #- C57
+          #- C65
       mvv:
         type: integer
         description: The Merchant Verification Value

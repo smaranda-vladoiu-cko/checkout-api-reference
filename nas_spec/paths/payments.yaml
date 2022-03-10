@@ -106,34 +106,12 @@ post:
                 account_holder:
                   type: 'individual'
                   first_name: 'John'
-                  middle_name: 'Joseph'
                   last_name: 'Smith'
-                  date_of_birth: '1938-04-18'
-                  country_of_birth: 'US'
-                  billing_address:
-                    address_line1: 'Apt. 3D'
-                    address_line2: '90 Tottenham Court Road'
-                    city: 'London'
-                    zip: 'W1T 4TJ'
-                    country: 'GB'
-                  phone:
-                    country_code: '44'
-                    number: '7777 123456'
-                  identification:
-                    type: 'driving_license'
-                    number: 'D55422213'
-                    issuing_country: 'GB'
-                    date_of_expiry: '2028-11-20'
-                  email: 'email@docs.checkout.com'
               amount: 1000
               currency: GBP
-              reference: 'PO-215-5721'
-              billing_descriptor:
-                reference: 'BILLING-REFERENCE'
               sender:
                 type: 'individual'
                 first_name: 'Hayley'
-                middle_name: 'Vanessa'
                 last_name: 'Jones'
                 address:
                   address_line1: 'A House'
@@ -145,18 +123,8 @@ post:
                 reference_type: 'other'             
                 date_of_birth: '1939-05-27'
                 source_of_funds: 'debit'
-                country_of_birth: 'US'
-                identification:
-                  type: 'passport'
-                  number: '55511199'
-                  issuing_country: 'US'
-                  date_of_expiry: '2031-01-13'
-                nationality: 'US'
               instruction:
-                purpose: 'pension'
                 funds_transfer_type: 'AA'
-                mvv: '0123456789'
-              processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
           Card Payout - Direct Funds Disbursement:
             value:
               source:
@@ -170,14 +138,8 @@ post:
                   company_name: 'Checkout.com'
               amount: 1000
               currency: GBP
-              reference: 'PO-215-5721'
-              billing_descriptor:
-                reference: 'BILLING-REFERENCE'
               instruction:
-                purpose: 'pension'
                 funds_transfer_type: 'OG'
-                mvv: '0123456789'
-              processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
           Card Payout - Third-Party Funds Disbursement:
             value:
               source:
@@ -191,9 +153,6 @@ post:
                   company_name: 'Checkout.com'
               amount: 1000
               currency: GBP
-              reference: 'PO-215-5721'
-              billing_descriptor:
-                reference: 'BILLING-REFERENCE'
               sender:
                 type: 'corporate'
                 company_name: 'A Company'
@@ -206,15 +165,8 @@ post:
                 reference: '1234567ABCDEFG'
                 reference_type: 'other'             
                 source_of_funds: 'debit'
-                identification:
-                  type: 'tax_id'
-                  number: '888445761'
-                  issuing_country: 'US'
               instruction:
-                purpose: 'pension'
                 funds_transfer_type: 'FD'
-                mvv: '0123456789'
-              processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
          
   responses:
     '201':

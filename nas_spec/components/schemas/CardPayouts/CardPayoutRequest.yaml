@@ -112,9 +112,9 @@ properties:
         type: integer
         description: The Merchant Verification Value
         maxLength: 10
-      quote_id:
-        type: string
-        description: The quote ID of the transaction if obtained before making payout
+      # quote_id:
+      #   type: string
+      #   description: The quote ID of the transaction if obtained before making payout
   processing_channel_id:
     type: string
     description: The processing channel identifier

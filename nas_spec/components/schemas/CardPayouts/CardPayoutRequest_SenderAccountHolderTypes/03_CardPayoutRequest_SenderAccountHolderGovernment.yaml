@@ -60,11 +60,6 @@ properties:
       # - wallet_id
       # - social_network_id
       - other
-  date_of_birth:
-    type: string
-    description: The sender's date of birth. Mandatory when sending cross-border transactions from AU and `sender.type` = `individual`
-    maxLength: 10
-    minLength: 10
   source_of_funds:
     type: string
     enum:
@@ -74,11 +69,6 @@ properties:
       - deposit_account
       - mobile_money_account
       - cash
-  country_of_birth:
-    type: string
-    description: The sender's country of birth
-    maxLength: 2
-    minLength: 2
   identification:
     type: object
     properties:
@@ -104,7 +94,3 @@ properties:
         description: The sender's ID expiry date
         maxLength: 10
         minLength: 10
-  nationality:
-    description: The [two-letter ISO country code](https://checkout.com/docs/four/resources/codes/country-codes) of the sender's nationality
-    maxLength: 2
-    minLength: 2

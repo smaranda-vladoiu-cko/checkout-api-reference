@@ -1,0 +1,14 @@
+type: object
+description: Details of a recurring authentication. This property should be manadtory in the response only for a recurring authentication type.
+required:
+  - days_between_payments
+  - expiry
+properties:
+  instrument_id:
+    days_between_payments: integer
+    description: Indicates the minimum number of days between authorisations.
+    example: 31
+  expiry:
+    type: string
+    description: Date after which no further authorisations are performed in the format yyyyMMdd.
+    example: 20220901

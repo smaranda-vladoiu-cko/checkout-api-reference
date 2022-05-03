@@ -1,5 +1,5 @@
 type: object
-description: Details of a recurring authentication. This property should be manadtory in the response only for a recurring authentication type.
+description: Details of a recurring authentication. This property should be mandatory in the response only for a recurring authentication type.
 required:
   - days_between_payments
   - expiry

@@ -7,7 +7,7 @@ properties:
   instrument_id:
     days_between_payments: integer
     description: Indicates the minimum number of days between authorisations.
-    example: 31
+    example: 28
   expiry:
     type: string
     description: Date after which no further authorisations are performed in the format yyyyMMdd.

@@ -1,8 +1,5 @@
 type: object
-description: Details of a recurring authentication. This property is needed only for a recurring authentication type. Values will be discared in any other cases.
-required:
-  - days_between_payments
-  - expiry
+description: Details of a recurring authentication. This property is needed only for a recurring authentication type. Value will be discarded in any other cases.
 properties:
   days_between_payments:
     type: integer
